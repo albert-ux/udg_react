@@ -54,6 +54,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
+            href="/index"
               target="_blank"
               id="navbar-brand"
             >
@@ -81,13 +82,7 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  href="/landing-page"
                 >
                   <i className="now-ui-icons files_single-copy-04"></i>
                   <p>Recetas</p>
