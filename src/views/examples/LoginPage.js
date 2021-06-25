@@ -17,8 +17,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -36,7 +35,7 @@ function LoginPage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
@@ -70,7 +69,7 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="First Name..."
+                        placeholder="Nombre completo"
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
@@ -84,11 +83,29 @@ function LoginPage() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons text_caps-small"></i>
+                          <i className="now-ui-icons ui-1_email-85"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Last Name..."
+                        placeholder="Email"
+                        type="text"
+                        onFocus={() => setLastFocus(true)}
+                        onBlur={() => setLastFocus(false)}
+                      ></Input>
+                    </InputGroup>
+                    <InputGroup
+                      className={
+                        "no-border input-lg" +
+                        (lastFocus ? " input-group-focus" : "")
+                      }
+                    >
+                      <InputGroupAddon addonType="prepend">
+                        <InputGroupText>
+                          <i className="now-ui-icons ui-2_chat-round"></i>
+                        </InputGroupText>
+                      </InputGroupAddon>
+                      <Input
+                        placeholder="Mensaje..."
                         type="text"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
@@ -104,37 +121,16 @@ function LoginPage() {
                       onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
-                      Get Started
+                      Mandar mensaje
                     </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Need Help?
-                        </a>
-                      </h6>
-                    </div>
+    
+          
                   </CardFooter>
                 </Form>
               </Card>
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
       </div>
     </>
   );

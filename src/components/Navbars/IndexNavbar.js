@@ -1,20 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 function IndexNavbar() {
@@ -101,6 +94,15 @@ function IndexNavbar() {
                 >
                   <i className="now-ui-icons users_single-02"></i>
                   <p>Registrarse</p>
+                </NavLink>
+                
+              </NavItem>
+              <NavItem>
+              <NavLink
+                  href="/contact"
+                >
+                  <i className="now-ui-icons ui-1_email-85"></i>
+                  <p>Contacto</p>
                 </NavLink>
               </NavItem>
             </Nav>

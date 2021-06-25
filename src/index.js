@@ -32,7 +32,7 @@ ReactDOM.render(
           render={(props) => <ProfilePage {...props} />}
         />
         <Route
-          path="/login-page"
+          path="/contact"
           render={(props) => <LoginPage {...props} />}
         />
         <Redirect to="/index" />

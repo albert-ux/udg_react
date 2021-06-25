@@ -88,6 +88,71 @@ const Cards = (props) => {
           </Card>
 
         </div>
+        <div className="col-4">
+
+          <Card>
+            <CardImg top width="100%" src="https://www.foodspring.es/magazine/wp-content/uploads/2021/05/Nicecream-Heidelbeere.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">Nicecream de tarta de queso con arándanos</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">RECETA FIT</CardSubtitle>
+              <CardText>Cremosa, rica en proteínas y a todo color para empezar bien el día</CardText>
+              <Button>Ver más</Button>
+            </CardBody>
+          </Card>
+
+        </div>
+        <div className="col-4">
+
+          <Card>
+            <CardImg top width="100%" src="https://www.foodspring.es/magazine/wp-content/uploads/2021/05/P1600483-1.png" alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">Babka vegana de chocolate</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">RECETA FIT</CardSubtitle>
+              <CardText>Masa súper esponjosa y con cremoso relleno</CardText>
+              <Button>Ver más</Button>
+            </CardBody>
+          </Card>
+
+        </div>
+        <div className="col-4">
+
+          <Card>
+            <CardImg top width="100%" src="https://www.foodspring.es/magazine/wp-content/uploads/2021/04/noodle_buddha_bowl.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">Buddha bowl vegano de pasta proteica</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">RECETA FIT</CardSubtitle>
+              <CardText>Para nosotros, los buddha bowl son más que un plato de moda. Y es que estos boles no deberían faltar en cualquier cocina fitness que se precie.</CardText>
+              <Button>Ver más</Button>
+            </CardBody>
+          </Card>
+
+        </div>
+        <div className="col-4">
+
+          <Card>
+            <CardImg top width="100%" src="https://www.foodspring.es/magazine/wp-content/uploads/2021/02/vegane_zucchini_pfannkuchen.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">Tortitas veganas de calabacín</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">RECETA FIT</CardSubtitle>
+              <CardText>Las tortitas son una de esas especialidades que siempre apetecen. En esta ocasión te proponemos una variante salada basada con el calabacín como ingrediente principal.</CardText>
+              <Button>Ver más</Button>
+            </CardBody>
+          </Card>
+
+        </div>
+        <div className="col-4">
+
+          <Card>
+            <CardImg top width="100%" src="https://www.foodspring.es/magazine/wp-content/uploads/2021/01/rainbow_pancakes.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">Wraps multicolor proteicos veganos</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">RECETA FIT</CardSubtitle>
+              <CardText>Los wraps nunca fallan. Nos valen para llevárnoslos al trabajo o para picar entre horas cuando estamos fuera de casa. Estos wraps multicolor que hoy os presentamos entran por los ojos, pero es que además están buenísimos. </CardText>
+              <Button>Ver más</Button>
+            </CardBody>
+          </Card>
+
+        </div>
       </div>
 
 
